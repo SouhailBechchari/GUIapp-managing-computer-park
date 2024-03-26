@@ -1,0 +1,15 @@
+My Python code creates a graphical user interface (GUI) application using the Tkinter library to manage a computer park. It's divided into several classes and functions to handle different aspects of the application.
+
+Firstly, there are two classes defined for adding new equipment (`AjouterMaterielPopup`) and new clients (`AjouterClientPopup`). These classes set up popup windows with various input fields for entering details such as equipment type, name, brand, etc., and client information like name, purchased equipment, and contact details.
+
+The `ParcInformatiqueApp` class serves as the main application class. It initializes the GUI, establishes a connection to an SQLite database, and creates tables for storing equipment and client data. This class also defines methods for adding new equipment and clients to the database, displaying lists of equipment and clients in the GUI, and removing equipment from the database.
+
+The initialization phase of the application sets up the main Tkinter window, sets its title, and adds a background image. It also ensures that the necessary tables exist in the SQLite database.
+
+The GUI creation section involves creating various elements such as labels, list boxes (to display equipment and client information), and buttons for performing actions like adding, displaying, and removing equipment and clients.
+
+Button actions are defined to handle user interactions. For instance, when a user clicks on the "Add Equipment" button, it triggers the creation of a popup window where the user can enter details of the new equipment. Similarly, other buttons perform actions like adding clients, displaying equipment and client lists, and removing equipment.
+
+Finally, the application enters the Tkinter event loop (`root.mainloop()`), allowing users to interact with the GUI. Throughout the process, data is stored in an SQLite database, ensuring persistence across application sessions.
+
+Overall, this code provides a functional interface for managing a computer park, allowing users to add, view, and remove equipment and client information through a user-friendly graphical interface.
